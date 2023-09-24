@@ -457,7 +457,7 @@ var R6MLangTermsJapanese = (function(R6MLangTerms, undefined) {
           blueHallway: '青廊下',
           carGarage: '車ガレージ',
           mainGarageEntrance: 'メイン<br/>ガレージ<br/>入口',
-          westMainStairs: '西側メイン階段',
+          westMainStairs: '西メイン<br/>階段',
           cliffside: '崖際',
           campfire: 'キャンプファイア'
         },

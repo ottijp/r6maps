@@ -769,7 +769,7 @@ var R6MMainData = (function(R6MLangTerms, undefined){
           { floor: 0, top: 335, left: 535, description: chaletTerms.wineCellar },
           { floor: 0, top: 250, left: 610, description: chaletTerms.basementHallway },
           { floor: 0, top: 165, left: 740, description: chaletTerms.backyardStairs },
-          { floor: 0, top: -95, left: 238, hardToRead: true, smaller: true, description: chaletTerms.westMainStairs },
+          { floor: 0, top: 200, left: 490, hardToRead: true, smaller: true, description: chaletTerms.westMainStairs },
           { floor: 0, top: 35, left: 540, description: chaletTerms.carGarage },
           { floor: 0, top: -35, left: 630, smaller: true, hardToRead: true, description: chaletTerms.mainGarageEntrance },
 
@@ -790,6 +790,7 @@ var R6MMainData = (function(R6MLangTerms, undefined){
           { floor: 1, top: 60, left: 555, hardToRead: true, description: chaletTerms.kitchenHallway },
           { floor: 1, top: 70, left: 640, description: chaletTerms.kitchen },
           { floor: 1, top: 165, left: 740, hardToRead: true, description: chaletTerms.backyardStairs },
+          { floor: 1, top: 190, left: 480, hardToRead: true, smaller: true, description: chaletTerms.westMainStairs },
 
           // second floor
           { floor: 2, top: 610, left: 500, hardToRead: true, description: chaletTerms.fireplace },
