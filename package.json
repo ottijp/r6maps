@@ -48,7 +48,7 @@
     "rimraf": "^2.5.4"
   },
   "dependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^8.0.0",
     "uglify-js": "^3.6.8"
   }
 }
