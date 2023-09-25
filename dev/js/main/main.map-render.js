@@ -312,7 +312,7 @@ var R6MMainRender = (function($,window,document,R6MLangTerms,undefined) {
     return html;
   };
 
-  var getLegendHtml = function getLegendHtml() {
+  var getLegendHtml = function getLegendHtml(legendPoints) {
     var html = '',
       legendTerms = langTerms.legend,
       CSS_ABBREV = 'legend-',
@@ -332,7 +332,13 @@ var R6MMainRender = (function($,window,document,R6MLangTerms,undefined) {
         { class: CSS_ABBREV + 'ladder', description: legendTerms.ladders }
       ];
 
-    html += '<ul id="legend">';
+    // customize legend position
+    if (legendPoints) {
+      html += '<ul id="legend" style="' + getPositionStyle(legendPoints) + '">';
+    } else {
+      html += '<ul id="legend" style="right: -1255px; bottom: -725px;">';
+    }
+
     legendItems.forEach(function(item) {
       html += '<li class="' + item.class + '">' + item.description + '</li>';
     });
@@ -449,7 +455,7 @@ var R6MMainRender = (function($,window,document,R6MLangTerms,undefined) {
     html += getSpawnPointsHtml(mapData.spawnPoints);
     html += getCompassHtml(mapData.compassPoints);
     html += getLaddersHtml(mapData.ladders);
-    html += getLegendHtml();
+    html += getLegendHtml(mapData.legendPoints);
 
     $mapElements.html(html);
     $mapPanelLabels.html(getPanelLabelsHtml(mapData.floors));
