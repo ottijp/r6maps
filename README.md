@@ -19,9 +19,10 @@ To check the dependencies, just type `scss`. If the program waits for input, you
 - Install npm and install packages: `npm install`
 - General build: `npm run build`
     + Builds js and scss into the `site` folder.
-    + Check `package.json` for more particular scripts.
-- File watchers are also available (see `packages.json`)
-- To run, locate `site/index.html` and open it.
+    + To deploy, serve `site` as root directory.
+- Developing: `npm run dev`
+    + Watch and build automatically.
+    + Start http server.
 
 ## Things to work on
 Contributions are welcome. :)

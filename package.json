@@ -4,27 +4,10 @@
   "//2": "Version number format: GAME_YEAR.GAME_SEASON.SITE_VERSION",
   "version": "2.4.1",
   "description": "Rainbow Six Siege map quick references",
-  "watch": {
-    "build:js": "dev/js/**/*.js"
-  },
   "scripts": {
-    "test:js": "eslint dev/js/**/*.js dev/utils/*.js",
-    "test:temp": "eslint site/js/statstemp/*.js",
-    "test": "npm run test:js",
-    "build:css:mkdir": "mkdirp ./site/css/release.2.4.1",
-    "build:css:main": "npm run build:css:mkdir && node-sass ./dev/scss/main/main.scss ./site/css/release.2.4.1/main.2.4.1.css",
-    "build:css:about": "npm run build:css:mkdir && node-sass ./dev/scss/about/about.scss ./site/css/release.2.4.1/about.2.4.1.css",
-    "build:css:stats": "npm run build:css:mkdir && node-sass ./dev/scss/stats/stats.scss ./site/css/release.2.4.1/stats.2.4.1.css",
-    "build:css": "npm run build:css:main && npm run build:css:about && npm run build:css:stats",
-    "watch:css": "npm run build:css:mkdir && node-sass --watch ./dev/scss/main/main.scss ./site/css/release.2.4.1/main.2.4.1.css",
-    "build:js:mkdir": "mkdirp ./site/js/release.2.4.1",
-    "build:js:common": "npm run build:js:mkdir && uglifyjs --compress --mangle -o ./site/js/release.2.4.1/common.min.js --source-map  \"filename='./site/js/release.2.4.1/common.min.js.map', url='common.min.js.map', includeSources=true\" ./dev/js/common/common.global.js ./dev/js/common/common.helpers.js ./dev/js/lang-terms/lang-terms.js ./dev/js/lang-terms/lang-terms.*.js",
-    "build:js:main": "npm run build:js:mkdir && uglifyjs --compress --mangle -o ./site/js/release.2.4.1/main.min.js --source-map  \"filename='./site/js/release.2.4.1/main.min.js.map', url='main.min.js.map', includeSources=true\" ./dev/js/main/main.map-data.js ./dev/js/main/main.map-render.js ./dev/js/main/main.controls.js ./dev/js/main/main.select-maps.js ./dev/js/main/main.drawing.js ./dev/js/main/main.sessions.js ./dev/js/main/main.js",
-    "build:js:about": "npm run build:js:mkdir && uglifyjs --compress --mangle -o ./site/js/release.2.4.1/about.min.js --source-map \"filename='./site/js/release.2.4.1/about.min.js.map', url='about.min.js.map', includeSources=true\" ./dev/js/about/about.js",
-    "build:js:stats": "npm run build:js:mkdir && uglifyjs --compress --mangle -o ./site/js/release.2.4.1/stats.min.js --source-map \"filename='./site/js/release.2.4.1/stats.min.js.map', url='stats.min.js.map', includeSources=true\" ./dev/js/stats/stats.meta-data.js ./dev/js/stats/stats.render.js ./dev/js/stats/stats.controls.js ./dev/js/stats/stats.operators.data.js ./dev/js/stats/stats.map.data.js ./dev/js/stats/stats.api.js ./dev/js/stats/stats.map.render.js ./dev/js/stats/stats.operators.render.js ./dev/js/stats/stats.operators.chart.js ./dev/js/stats/stats.js",
-    "build:js": "npm run test:js && npm run build:js:common && npm run build:js:main && npm run build:js:stats && npm run build:js:about",
-    "watch:js": "npm run build:js:mkdir && npm-watch",
-    "build": "npm run build:css && npm run build:js"
+    "lint": "eslint dev/js/**/*.js dev/utils/*.js",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -43,12 +26,16 @@
   },
   "homepage": "https://github.com/capajon/r6maps#readme",
   "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "cross-env": "^7.0.3",
     "eslint": "^2.2.0",
-    "npm-watch": "^0.6.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^9.0.0",
     "rimraf": "^2.5.4"
-  },
-  "dependencies": {
-    "node-sass": "^8.0.0",
-    "uglify-js": "^3.6.8"
   }
 }
