@@ -1,7 +1,8 @@
 # r6maps
-[![Build Status](https://travis-ci.com/purechaose/r6maps.svg?branch=master)](https://travis-ci.com/purechaose/r6maps)
 
-**Newest version now auto-hosted at https://purechaose.github.io/r6maps**
+[![Build Status](https://github.com/ottijp/r6maps/actions/workflows/deploy.yml/badge.svg)](https://github.com/ottijp/r6maps/actions/workflows/deploy.yml)
+
+**Newest version now auto-hosted at https://ottijp.github.io/r6maps**
 
 r6maps is designed to be a quick reference for Rainbow Six Siege maps.  Please see the about.html page for more details.
 
