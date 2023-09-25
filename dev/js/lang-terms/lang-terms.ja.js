@@ -413,7 +413,7 @@ var R6MLangTermsJapanese = (function(R6MLangTerms, undefined) {
           mainGarage: 'メインガレージ',
           garageEntrance: 'メインガレージ<br/>入口',
           westEntrance: '西入口',
-          gamingRoomHallway: ' 娯楽室前<br/>廊下',
+          gamingRoomHallway: ' 娯楽室前廊下',
           gamingRoom: '娯楽室',
           bar: 'バー',
           greatRoom: 'リビング',

@@ -1,4 +1,5 @@
 {
+  "root": true,
   "rules": {
     "array-bracket-spacing": [2, "never"],
     "quote-props": [2, "as-needed"],
