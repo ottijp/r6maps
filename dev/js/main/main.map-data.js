@@ -656,177 +656,176 @@ var R6MMainData = (function(R6MLangTerms, undefined){
           { index: 3, top: -175, left: -315, name: floorTerms.roof }
         ],
         hostageObjectives: [
-          { floor: 0, top: 500, left: 440 },
-          { floor: 1, top: 476, left: 528 },
-          { floor: 2, top: 135, left: 650 },
-          { floor: 2, top: 530, left: 240 }
+          { floor: 0, top: 550, left: 500 },
+          { floor: 1, top: 520, left: 610 },
+          { floor: 2, top: 110, left: 750 },
+          { floor: 2, top: 560, left: 340 }
         ],
         bombObjectives: [
-          { floor: 0, top: 542, left: 423, set: 4, letter: objectiveTerms.bombShortB },
-          { floor: 0, top: 391, left: 514, set: 4, letter: objectiveTerms.bombShortA },
-          { floor: 1, top: 92, left: 637, set: 3, letter: objectiveTerms.bombShortB },
-          { floor: 1, top: 265, left: 541, set: 3, letter: objectiveTerms.bombShortA },
-          { floor: 1, top: 490, left: 428, set: 2, letter: objectiveTerms.bombShortB },
-          { floor: 1, top: 524, left: 217, set: 2, letter: objectiveTerms.bombShortA },
-          { floor: 2, top: 115, left: 640, set: 1, letter: objectiveTerms.bombShortB },
-          { floor: 2, top: 215, left: 566, set: 1, letter: objectiveTerms.bombShortA }
+          { floor: 0, top: 600, left: 490, set: 4, letter: objectiveTerms.bombShortB },
+          { floor: 0, top: 410, left: 580, set: 4, letter: objectiveTerms.bombShortA },
+          { floor: 1, top: 110, left: 700, set: 3, letter: objectiveTerms.bombShortB },
+          { floor: 1, top: 280, left: 620, set: 3, letter: objectiveTerms.bombShortA },
+          { floor: 1, top: 530, left: 500, set: 2, letter: objectiveTerms.bombShortB },
+          { floor: 1, top: 560, left: 260, set: 2, letter: objectiveTerms.bombShortA },
+          { floor: 2, top: 110, left: 720, set: 1, letter: objectiveTerms.bombShortB },
+          { floor: 2, top: 240, left: 620, set: 1, letter: objectiveTerms.bombShortA }
         ],
         secureObjectives: [
-          { floor: 0, top: 305, left: 583 },
-          { floor: 1, top: 438, left: 478 },
-          { floor: 2, top: 220, left: 430 },
-          { floor: 2, top: 535, left: 215 }
+          { floor: 0, top: 340, left: 660 },
+          { floor: 1, top: 470, left: 550 },
+          { floor: 2, top: 240, left: 510 },
+          { floor: 2, top: 570, left: 250 }
         ],
         zoomPoints: {
           topLeft: { top: -130, left: 80 },
           bottomRight: { top: 680, left: 890 }
         },
         compassPoints: {
-          top: 405, left: 1155
+          top: 390, left: 1155
         },
         ladders: [
-          { floor: 0, top: 645, left: 405, otherFloor: 'up' },
-          { floor: 1, top: 645, left: 405, otherFloor: 'down' },
-          { floor: 1, top: 380, left: 135, otherFloor: 'up' },
-          { floor: 2, top: 380, left: 135, otherFloor: 'down' },
-          { floor: 1, top: 575, left: 605, otherFloor: 'up' },
-          { floor: 2, top: 575, left: 605, otherFloor: 'down' },
-          { floor: 1, top: 267, left: 361, otherFloor: 'up' },
-          { floor: 2, top: 267, left: 361, otherFloor: 'down' },
+          { floor: 0, top: 690, left: 430, otherFloor: 'up' },
+          { floor: 1, top: 690, left: 430, otherFloor: 'down' },
+          { floor: 1, top: 390, left: 170, otherFloor: 'up' },
+          { floor: 2, top: 390, left: 170, otherFloor: 'down' },
+          { floor: 1, top: 650, left: 700, otherFloor: 'up' },
+          { floor: 2, top: 650, left: 700, otherFloor: 'down' },
+          { floor: 1, top: 280, left: 410, otherFloor: 'up' },
+          { floor: 2, top: 280, left: 410, otherFloor: 'down' },
 
-          { floor: 1, top: 600, left: -108, otherFloor: 'up' },
-          { floor: 2, top: 600, left: -108, otherFloor: 'down' }
+          { floor: 1, top: 640, left: -108, otherFloor: 'up' },
+          { floor: 2, top: 640, left: -108, otherFloor: 'down' }
         ],
         cameras: [
           {
-            floor: 2, top: -83, left: 650, id: 1, location: chaletTerms.solarium,
-            los: [[{top: -71, left: 500}, {top: -67, left: 465},{top: -100, left: 464}, {top: -100, left: 662},{top: 194, left: 643}]]
+            floor: 2, top: -120, left: 740, id: 1, location: chaletTerms.solarium,
+            los: [[{top: -105, left: 585}, {top: -100, left: 538}, {top: -138, left: 538}, {top: -138, left: 760},{top: -10, left: 760}]]
           },
           {
-            floor: 1, otherFloor: 'up', top: 363, left: 206, id: 2, location: chaletTerms.libraryStairs,
-            los: [[{top: 378, left: 370}, {top: 360, left: 290}, {top: 360, left: 200}, {top: 395, left: 200}, {top: 390, left: 280}, {top: 410, left: 320}]]
+            floor: 1, otherFloor: 'up', top: 390, left: 250, id: 2, location: chaletTerms.libraryStairs
           },
           {
-            floor: 2, top: 363, left: 206, id: 2, location: chaletTerms.libraryStairs,
-            los: [[{top: 335, left: 511}, {top: 335, left: 200}, {top: 390, left: 200}, {top: 390, left: 511}]]
+            floor: 2, top: 390, left: 250, id: 2, location: chaletTerms.libraryStairs,
+            los: [[{top: 365, left: 570}, {top: 365, left: 230}, {top: 430, left: 230}, {top: 430, left: 570}]]
           },
           {
-            floor: 1, otherFloor: 'up', top: 570, left: 580, id: 3, location: chaletTerms.fireplace,
-            los: [[{top: 545, left: 440}, {top: 545, left: 460}, {top: 570, left: 580}, {top: 370, left: 580}, {top: 360, left: 480}]]
+            floor: 1, otherFloor: 'up', top: 625, left: 655, id: 3, location: chaletTerms.fireplace
           },
           {
-            floor: 2, top: 570, left: 580, id: 3, location: chaletTerms.fireplace,
-            los: [[{top: 500, left: 385}, {top: 530, left: 385}, {top: 490, left: 200}, {top: 520, left: 200}, {top: 560, left: 380}, {top: 615, left: 385}, {top: 615, left: 580}, {top: 400, left: 580}, {top: 405, left: 460}]]
+            floor: 2, top: 625, left: 655, id: 3, location: chaletTerms.fireplace,
+            los: [[{top: 575, left: 620}, {top: 600, left: 620}, {top: 600, left: 590}, {top: 550, left: 440}, {top: 595, left: 440}, {top: 570, left: 230}, {top: 590, left: 230}, {top: 640, left: 620}, {top: 650, left: 620}, {top: 665, left: 440}, {top: 690, left: 440}, {top: 690, left: 670}, {top: 445, left: 670}, {top: 445, left: 550}, {top: 575, left: 620}]]
           },
           {
-            floor: 1, top: 143, left: 424, id: 4, location: chaletTerms.westMainEntrance,
-            los: [[, {top: 35, left: 420}, {top: 143, left: 424}, {top: 205, left: 470}]]
+            floor: 1, top: 143, left: 500, id: 4, location: chaletTerms.westMainEntrance,
+            los: [[{top: 190, left: 485}, {top: 20, left: 485}, {top: 20, left: 605}, {top: 50, left: 605}, {top: 15, left: 670}, {top: 30, left: 670}, {top: 10, left: 690}, {top: 10, left: 710}, {top: 50, left: 670}, {top: 100, left: 605}, {top: 130, left: 605}, {top: 130, left: 565}, {top: 210, left: 565}, {top: 210, left: 540}, {top: 190, left: 530}, {top: 190, left: 485}]]
           },
           {
-            floor: 0, top: 415, left: 421, id: 5, location: chaletTerms.snowmobileGarage,
-            los: [[{top: 410, left: 490}, {top: 410, left: 380}, {top: 600, left: 380}, {top: 600, left: 410}]]
+            floor: 0, top: 455, left: 473, id: 5, location: chaletTerms.snowmobileGarage,
+            los: [[{top: 445, left: 420}, {top: 445, left: 540}, {top: 520, left: 540}, {top: 545, left: 580}, {top: 555, left: 580}, {top: 625, left: 650}, {top: 625, left: 630}, {top: 580, left: 580}, {top: 670, left: 580}, {top: 670, left: 420}, {top: 445, left: 420}]]
           },
           {
-            outdoor: true, top: -83, left: 37, id: 6, location: chaletTerms.backyard,
-            los: [[{top: -140, left: 870},{top: -83, left: 37},{top: 40, left: -310}]]
+            outdoor: true, top: -100, left: 60, id: 6, location: chaletTerms.backyard,
+            los: [[{top: -200, left: 870}, {top: -100, left: 60}, {top: 40, left: -310}]]
           },
           {
-            outdoor: true, top: 160, left: 1060, id: 7, location: chaletTerms.frontYard,
-            los: [[{top: -10, left: 830},{top: 160, left: 1060},{top: 390, left: 945}]]
+            outdoor: true, top: 150, left: 1160, id: 7, location: chaletTerms.frontYard,
+            los: [[{top: -200, left: 880}, {top: 150, left: 1150}, {top: 450, left: 1200}]]
           }
         ],
         ceilingHatches: [
-          { floor: 0, top: 538, left: 557 },
-          { floor: 0, top: -70, left: 631 },
-          { floor: 0, top: 307, left: 629 },
-          { floor: 1, top: 475, left: 217 },
-          { floor: 1, top: 414, left: 359 },
-          { floor: 1, top: 164, left: 636 }
+          { floor: 0, top: 600, left: 640 },
+          { floor: 0, top: -100, left: 730 },
+          { floor: 0, top: 325, left: 725 },
+          { floor: 1, top: 520, left: 255 },
+          { floor: 1, top: 450, left: 420 },
+          { floor: 1, top: 180, left: 740 }
         ],
         skylights: [],
         droneTunnels: [
-          { floor: 0, top: 612, left: 457, rotate: 0, size: DRONE_SMALL },
-          { floor: 0, top: 378, left: 488, rotate: 90, size: DRONE_SMALL },
-          { floor: 0, top: -83, left: 486, rotate: 0, size: DRONE_MED },
-          { floor: 1, top: 5, left: 662, rotate: 90, size: DRONE_MED },
-          { floor: 1, top: 229, left: 656, rotate: 90, size: DRONE_SMALL },
-          { floor: 1, top: 217, left: 477, rotate: 90, size: 45 },
-          { floor: 1, top: 300, left: 400, rotate: 0, size: 60 },
-          { floor: 1, top: 539, left: 200, rotate: 90, size: DRONE_SMALL }
+          { floor: 0, top: 677, left: 480, rotate: 0, size: DRONE_SMALL },
+          { floor: 0, top: 395, left: 550, rotate: 90, size: DRONE_SMALL },
+          { floor: 0, top: -125, left: 550, rotate: 0, size: DRONE_MED },
+          { floor: 1, top: -10, left: 762, rotate: 90, size: DRONE_MED },
+          { floor: 1, top: 220, left: 570, rotate: 90, size: DRONE_SMALL },
+          { floor: 1, top: 220, left: 528, rotate: 90, size: DRONE_SMALL },
+          { floor: 1, top: 320, left: 430, rotate: 0, size: 80 },
+          { floor: 1, top: 600, left: 228, rotate: 90, size: DRONE_SMALL }
         ],
         spawnPoints: [
-          { letter: spawnTerms.a, top: -175, left: 865, description: chaletTerms.spawnCampfire },
+          { letter: spawnTerms.a, top: -175, left: 950, description: chaletTerms.spawnCampfire },
           { letter: spawnTerms.b, top: 400, left: 1080, description: chaletTerms.spawnCliffside },
           { letter: spawnTerms.c, top: 445, left: -195, description: chaletTerms.spawnLakeside }
         ],
         roomLabels: [
           // basement
-          { floor: 0, hardToRead: true, smaller: true, top: 360, left: 245, description: chaletTerms.libraryStairs },
-          { floor: 0, top: 395, left: 420, hardToRead: true, description: chaletTerms.blueHallway },
-          { floor: 0, top: 495, left: 485, hardToRead: true, description: chaletTerms.snowmobileGarage },
-          { floor: 0, top: 595, left: 415, hardToRead: true, description: chaletTerms.fireplaceStairs },
-          { floor: 0, top: 500, left: 550, hardToRead: true, description: chaletTerms.storageRoom },
-          { floor: 0, top: 335, left: 535, description: chaletTerms.wineCellar },
-          { floor: 0, top: 250, left: 610, description: chaletTerms.basementHallway },
-          { floor: 0, top: 165, left: 740, description: chaletTerms.backyardStairs },
-          { floor: 0, top: 200, left: 490, hardToRead: true, smaller: true, description: chaletTerms.westMainStairs },
-          { floor: 0, top: 35, left: 540, description: chaletTerms.carGarage },
-          { floor: 0, top: -35, left: 630, smaller: true, hardToRead: true, description: chaletTerms.mainGarageEntrance },
+          { floor: 0, hardToRead: true, smaller: true, top: 410, left: 290, description: chaletTerms.libraryStairs },
+          { floor: 0, top: 430, left: 440, hardToRead: true, description: chaletTerms.blueHallway },
+          { floor: 0, top: 520, left: 485, hardToRead: true, description: chaletTerms.snowmobileGarage },
+          { floor: 0, top: 665, left: 470, hardToRead: true, smaller: true, description: chaletTerms.fireplaceStairs },
+          { floor: 0, top: 570, left: 630, hardToRead: true, description: chaletTerms.storageRoom },
+          { floor: 0, top: 410, left: 650, hardToRead: true, description: chaletTerms.wineCellar },
+          { floor: 0, top: 270, left: 670, description: chaletTerms.basementHallway },
+          { floor: 0, top: 200, left: 820, hardToRead: true, description: chaletTerms.backyardStairs },
+          { floor: 0, top: 200, left: 550, hardToRead: true, smaller: true, description: chaletTerms.westMainStairs },
+          { floor: 0, top: 20, left: 620, description: chaletTerms.carGarage },
+          { floor: 0, top: -60, left: 720, smaller: true, hardToRead: true, description: chaletTerms.mainGarageEntrance },
 
           // first floor
-          { floor: 1, hardToRead: true, smaller: true, top: 360, left: 245, description: chaletTerms.libraryStairs },
-          { floor: 1, top: 355, left: 340, smaller: true, description: chaletTerms.gamingRoomHallway },
-          { floor: 1, top: 505, left: 275, hardToRead: true, description: chaletTerms.gamingRoom },
-          { floor: 1, top: 610, left: 295, hardToRead: true, description: chaletTerms.barStock },
-          { floor: 1, top: 455, left: 390, description: chaletTerms.bar },
-          { floor: 1, top: 610, left: 500, hardToRead: true, description: chaletTerms.fireplaceStairs },
-          { floor: 1, top: 430, left: 525, hardToRead: true, description: chaletTerms.fireplace },
-          { floor: 1, top: 320, left: 280, hardToRead: true, description: chaletTerms.mudroom },
-          { floor: 1, top: 290, left: 485, smaller: true, description: chaletTerms.diningHallway },
-          { floor: 1, top: 240, left: 580, hardToRead: true, description: chaletTerms.diningRoom },
-          { floor: 1, hardToRead: true, smaller: true, top: -65, left: 500, description: chaletTerms.trophyStairs },
-          { floor: 1, top: 120, left: 470, description: chaletTerms.westMainEntrance },
-          { floor: 1, top: -30, left: 555, hardToRead: true, description: chaletTerms.trophyRoom },
-          { floor: 1, top: 60, left: 555, hardToRead: true, description: chaletTerms.kitchenHallway },
-          { floor: 1, top: 70, left: 640, description: chaletTerms.kitchen },
-          { floor: 1, top: 165, left: 740, hardToRead: true, description: chaletTerms.backyardStairs },
-          { floor: 1, top: 190, left: 480, hardToRead: true, smaller: true, description: chaletTerms.westMainStairs },
+          { floor: 1, top: 400, left: 310, hardToRead: true, smaller: true, description: chaletTerms.libraryStairs },
+          { floor: 1, top: 395, left: 430, smaller: true, description: chaletTerms.gamingRoomHallway },
+          { floor: 1, top: 560, left: 310, hardToRead: true, description: chaletTerms.gamingRoom },
+          { floor: 1, top: 670, left: 310, hardToRead: true, description: chaletTerms.barStock },
+          { floor: 1, top: 520, left: 450, description: chaletTerms.bar },
+          { floor: 1, top: 670, left: 480, hardToRead: true, description: chaletTerms.fireplaceStairs },
+          { floor: 1, top: 480, left: 610, hardToRead: true, description: chaletTerms.fireplace },
+          { floor: 1, top: 330, left: 320, hardToRead: true, description: chaletTerms.mudroom },
+          { floor: 1, top: 300, left: 560, hardToRead: true, smaller: true, description: chaletTerms.diningHallway },
+          { floor: 1, top: 250, left: 670, hardToRead: true, description: chaletTerms.diningRoom },
+          { floor: 1, top: -105, left: 580, hardToRead: true, smaller: true, description: chaletTerms.trophyStairs },
+          { floor: 1, top: 120, left: 540, description: chaletTerms.westMainEntrance },
+          { floor: 1, top: -60, left: 650, hardToRead: true, description: chaletTerms.trophyRoom },
+          { floor: 1, top: 55, left: 645, hardToRead: true, smaller: true, description: chaletTerms.kitchenHallway },
+          { floor: 1, top: 80, left: 740, description: chaletTerms.kitchen },
+          { floor: 1, top: 240, left: 825, hardToRead: true, description: chaletTerms.backyardStairs },
+          { floor: 1, top: 195, left: 550, hardToRead: true, smaller: true, description: chaletTerms.westMainStairs },
 
           // second floor
-          { floor: 2, top: 610, left: 500, hardToRead: true, description: chaletTerms.fireplace },
-          { floor: 2, hardToRead: true, smaller: true, top: 360, left: 245, description: chaletTerms.libraryStairs },
-          { floor: 2, top: 375, left: 400, description: chaletTerms.libraryHallway },
-          { floor: 2, top: 435, left: 325, smaller: true, description: chaletTerms.libraryEntrance },
-          { floor: 2, top: 485, left: 265, hardToRead: true, description: chaletTerms.library },
-          { floor: 2, hardToRead: true, smaller: true, top: -65, left: 500, description: chaletTerms.trophyStairs },
-          { floor: 2, top: 100, left: 500, hardToRead: true, description: chaletTerms.masterBathroom },
-          { floor: 2, top: 75, left: 635, hardToRead: true, description: chaletTerms.masterBedroom },
+          { floor: 2, top: 610, left: 600, hardToRead: true, description: chaletTerms.fireplace },
+          { floor: 2, top: 390, left: 310, hardToRead: true, smaller: true, description: chaletTerms.libraryStairs },
+          { floor: 2, top: 410, left: 450, description: chaletTerms.libraryHallway },
+          { floor: 2, top: 495, left: 385, smaller: true, description: chaletTerms.libraryEntrance },
+          { floor: 2, top: 610, left: 330, veryHardToRead: true, description: chaletTerms.library },
+          { floor: 2, top: -110, left: 590, hardToRead: true, smaller: true, description: chaletTerms.trophyStairs },
+          { floor: 2, top: 70, left: 550, hardToRead: true, description: chaletTerms.masterBathroom },
+          { floor: 2, top: 50, left: 710, hardToRead: true, description: chaletTerms.masterBedroom },
           { floor: 2, top: -20, left: 575, hardToRead: true, description: chaletTerms.solarium },
-          { floor: 2, top: 190, left: 485, description: chaletTerms.pianoRoom },
-          { floor: 2, top: 445, left: 450, hardToRead: true, description: chaletTerms.mezzanine },
-          { floor: 2, top: 310, left: 580, hardToRead: true, description: chaletTerms.office },
+          { floor: 2, top: 190, left: 550, description: chaletTerms.pianoRoom },
+          { floor: 2, top: 600, left: 480, hardToRead: true, description: chaletTerms.mezzanine },
+          { floor: 2, top: 310, left: 680, hardToRead: true, description: chaletTerms.office },
 
           // balcony
-          { floor: 2, top: 610, left: 225, hardToRead: true, smaller: true, description: chaletTerms.libraryBalcony },
-          { floor: 2, top: 450, left: 620, description: chaletTerms.officeBalcony },
-          { floor: 2, top: 315, left: 345, description: chaletTerms.frontYard },
+          { floor: 2, top: 500, left: 180, hardToRead: true, smaller: true, description: chaletTerms.libraryBalcony },
+          { floor: 2, top: 680, left: 320, hardToRead: true, smaller: true, description: chaletTerms.libraryBalcony.removeBreakTags() },
+          { floor: 2, top: 520, left: 730, hardToRead: true, description: chaletTerms.officeBalcony },
+          { floor: 2, top: 330, left: 380, hardToRead: true, description: chaletTerms.frontYard },
 
           // outside
-          { outdoor: true, top: -90, left: 350, description: chaletTerms.woodenTrail },
-          { outdoor: true, top: -800, left: 850, description: chaletTerms.campfireWood },
-          { outdoor: true, top: -150, left: 940, description: chaletTerms.campfire },
-          { outdoor: true, top: 455, left: 910, description: chaletTerms.backyard },
-          { outdoor: true, top: 65, left: 1105, hardToRead: true, description: chaletTerms.gazeebo },
-          { outdoor: true, top: 490, left: 1085, description: chaletTerms.cliffsideStairs },
-          { outdoor: true, top: 600, left: 945, description: chaletTerms.cliffsideWoods },
-          { outdoor: true, top: 720, left: 1090, description: chaletTerms.cliffside },
-          { outdoor: true, top: 115, left: 915, description: chaletTerms.backyard },
-          { outdoor: true, top: 405, left: 730, hardToRead: true, description: chaletTerms.backyardPatio },
-          { outdoor: true, top: 265, left: -290, description: chaletTerms.helipadTrail },
-          { outdoor: true, top: 500, left: -40, hardToRead: true, description: chaletTerms.helipad },
-          { outdoor: true, top: 450, left: 125, description: chaletTerms.frontYardPatio },
-          { outdoor: true, top: 100, left: 230, description: chaletTerms.frontYard },
-          { outdoor: true, top: 700, left: 400, hardToRead: true, description: chaletTerms.snowmobiles }
+          { outdoor: true, top: -180, left: 250, veryHardToRead: true, description: chaletTerms.woodenTrail },
+          { outdoor: true, top: -200, left: 700, description: chaletTerms.campfireWood },
+          { outdoor: true, top: -200, left: 1200, description: chaletTerms.campfire },
+          { outdoor: true, top: 0, left: 900, hardToRead: true, description: chaletTerms.backyard },
+          { outdoor: true, top: 250, left: 1050, hardToRead: true, description: chaletTerms.backyard },
+          { outdoor: true, top: 100, left: 1230, hardToRead: true, description: chaletTerms.gazeebo },
+          { outdoor: true, top: 490, left: 1280, description: chaletTerms.cliffsideStairs },
+          { outdoor: true, top: 600, left: 1300, description: chaletTerms.cliffsideWoods },
+          { outdoor: true, top: 700, left: 1350, description: chaletTerms.cliffside },
+          { outdoor: true, top: 450, left: 850, hardToRead: true, description: chaletTerms.backyardPatio },
+          { outdoor: true, top: 400, left: -290, hardToRead: true, description: chaletTerms.helipadTrail },
+          { outdoor: true, top: 580, left: -80, hardToRead: true, description: chaletTerms.helipad },
+          { outdoor: true, top: 450, left: 125, hardToRead: true, description: chaletTerms.frontYardPatio },
+          { outdoor: true, top: 100, left: 200, veryHardToRead: true, description: chaletTerms.frontYard },
+          { outdoor: true, top: 750, left: 450, hardToRead: true, description: chaletTerms.snowmobiles }
         ]
       },
       club: {
