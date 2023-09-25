@@ -8,20 +8,20 @@ const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 
 const jsMainFiles = [
-  './dev/js/main/main.controls.js',
-  './dev/js/main/main.drawing.js',
-  './dev/js/main/main.js',
   './dev/js/main/main.map-data.js',
   './dev/js/main/main.map-render.js',
+  './dev/js/main/main.controls.js',
   './dev/js/main/main.select-maps.js',
+  './dev/js/main/main.drawing.js',
   './dev/js/main/main.sessions.js',
+  './dev/js/main/main.js',
 ];
 
 const jsCommonFiles = [
   './dev/js/common/common.global.js',
   './dev/js/common/common.helpers.js',
-  './dev/js/lang-terms/lang-terms.*.js',
   './dev/js/lang-terms/lang-terms.js',
+  './dev/js/lang-terms/lang-terms.*.js',
 ];
 
 const jsAboutFiles = [
@@ -29,16 +29,16 @@ const jsAboutFiles = [
 ];
 
 const jsStatsFiles = [
-  './dev/js/stats/stats.api.js',
-  './dev/js/stats/stats.controls.js',
-  './dev/js/stats/stats.js',
-  './dev/js/stats/stats.map.data.js',
-  './dev/js/stats/stats.map.render.js',
   './dev/js/stats/stats.meta-data.js',
-  './dev/js/stats/stats.operators.chart.js',
-  './dev/js/stats/stats.operators.data.js',
-  './dev/js/stats/stats.operators.render.js',
   './dev/js/stats/stats.render.js',
+  './dev/js/stats/stats.controls.js',
+  './dev/js/stats/stats.operators.data.js',
+  './dev/js/stats/stats.map.data.js',
+  './dev/js/stats/stats.api.js',
+  './dev/js/stats/stats.map.render.js',
+  './dev/js/stats/stats.operators.render.js',
+  './dev/js/stats/stats.operators.chart.js',
+  './dev/js/stats/stats.js',
 ];
 
 const scssMainFile = './dev/scss/main/main.scss';
