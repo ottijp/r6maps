@@ -241,6 +241,7 @@ var R6MLangTermsJapanese = (function(R6MLangTerms, undefined) {
         house: '民家',
         kanal: '運河',
         kafe: 'カフェ・ドストエフスキー',
+        nighthaven: 'ナイトヘイブンラボ',
         oregon: 'オレゴン',
         plane: '大統領専用機',
         skyscraper: '高層ビル',
@@ -857,6 +858,76 @@ var R6MLangTermsJapanese = (function(R6MLangTerms, undefined) {
           smallBakery: 'スモール<br/>ベーカリー',
           coatCheck: '手荷物<br/>一時<br/>預かり所',
           reception: '大広間'
+        },
+        nighthaven: {
+          // EXT
+          park: '公園',
+          generator: 'ジェネレーター',
+          helipad: 'ヘリポート',
+          workshop: '作業室',
+          storageContainers: '収納コンテナ',
+          workshopSide: '作業室サイド',
+          warehouseWestSide: '倉庫西サイド',
+          northSide: '北サイド',
+          lobbySide: 'ロビーサイド',
+          mainEntrance: '正面入口',
+          platformEastSide: 'プラットフォーム<br/>東サイド',
+
+          // Stairs
+          vendingStairs: '自販機<br/>階段',
+          cargoStairs: '貨物階段',
+          lobbyStairs: 'ロビー階段',
+          ccStairs: '司令センター<br/>階段',
+
+          // Basement
+          exosuit: 'エクソスーツ',
+          assembly: 'アセンブリー',
+          tank: 'タンク',
+          animus: 'アニムス',
+          cargoRoom: '貨物室',
+          nanotech: 'ナノテク',
+          nanotechHallway: 'ナノテク廊下',
+          emergencyExit: '非常口',
+          workshopEntrance: '作業室<br/>入口',
+          deliveryArea: '配送<br/>エリア',
+
+          // 1F
+          warehouseDelivery: '倉庫配送場',
+          vending: '自販機',
+          pantry: '食料庫',
+          kitchen: 'キッチン',
+          cafeteria: 'カフェテリア',
+          cafeteriaHallway: 'カフェテリア<br/>廊下',
+          lobby: 'ロビー',
+          lounge: 'ラウンジ',
+          loungeHallway: 'ラウンジ廊下',
+          storage: '収納庫',
+          storageEntrance: '収納庫<br/>入口',
+          warehouse: '倉庫',
+          warehouseEntrance: '倉庫入口',
+          controlRoom: '管制室',
+          controlRoomHallway: '管制室<br/>廊下',
+          cargo: '貨物',
+
+          // 2F
+          commandCenter: '司令センター',
+          ccHallway: '司令センター<br/>廊下',
+          servers: 'サーバー',
+          it: 'IT',
+          electrical: '電子機器室',
+          connector: '連結通路',
+          meetingRoom: '会議室',
+          meetingRoomHallway: '会議室<br/>廊下',
+          ccBalcony: '司令センター<br/>バルコニー',
+          electricalSide: '電子機器室<br/>サイド',
+          terrace: 'ITテラス',
+          warehouseBalcony: '倉庫バルコニー',
+          meetingTerrace: '会議室テラス',
+          connectorTerrace: '連結通路テラス',
+          observatory: '展望台',
+
+          // Roof
+          roof: '屋根'
         },
         oregon: {
           // EXT
