@@ -20,6 +20,7 @@ var R6MMainData = (function(R6MLangTerms, undefined){
     kanalTerms = mapRoomTerms.kanal,
     kafeTerms = mapRoomTerms.kafe,
     oregonTerms = mapRoomTerms.oregon,
+    nighthavenTerms = mapRoomTerms.nighthaven,
     outbackTerms = mapRoomTerms.outback,
     planeTerms = mapRoomTerms.plane,
     skyscraperTerms = mapRoomTerms.skyscraper,
@@ -2554,6 +2555,237 @@ var R6MMainData = (function(R6MLangTerms, undefined){
           { floor: 0, top: -121, left: -128, hardToRead: true, description: kanalTerms.lockerRoom },
           { floor: 0, top: -226, left: -322, hardToRead: true, description: kanalTerms.divingRoom },
           { floor: -1, top: -31, left: -206, hardToRead: true, description: kanalTerms.tunnel01 }
+        ]
+      },
+      nighthaven: {
+        name: mapNameTerms.nighthaven,
+        imgUrlPrefix: 'nighthaven',
+        objectives: [
+          'bomb', 'hostage', 'secure'
+        ],
+        floors: [
+          { index: 0, left: -1488, top: -736, background: true, name: floorTerms.basement },
+          { index: 1, left: -418, top: -481, name: floorTerms.firstFloor, default: true },
+          { index: 2, left: -418, top: -481, name: floorTerms.secondFloor },
+          { index: 3, left: -418, top: -481, name: floorTerms.roof }
+        ],
+        hostageObjectives: [
+          // 2F servers
+          { floor: 2, left: -41, top: -14, smaller: true },
+          // 1F control room
+          { floor: 1, left: -85, top: 18, smaller: true },
+          // 1F launge
+          { floor: 1, left: -42, top: 25, smaller: true },
+          // nanotech
+          { floor: 0, left: 10, top: 75, smaller: true }
+        ],
+        bombObjectives: [
+          // 2F servers, command center
+          { floor: 2, left: -104, top: -17, set: 1, letter: objectiveTerms.bombShortA, smaller: true },
+          { floor: 2, left: 28, top: 42, set: 1, letter: objectiveTerms.bombShortB, smaller: true },
+          // 1F kitchen, cafeteria
+          { floor: 1, left: 280, top: -41, set: 2, letter: objectiveTerms.bombShortA, smaller: true },
+          { floor: 1, left: 224, top: -185, set: 2, letter: objectiveTerms.bombShortB, smaller: true },
+          // 1F storage, control room
+          { floor: 1, left: -215, top: 84, set: 3, letter: objectiveTerms.bombShortA, smaller: true },
+          { floor: 1, lwft: -75, top: 168, set: 3, letter: objectiveTerms.bombShortB, smaller: true },
+          // B assembly, tank
+          { floor: 0, left: -211, top: 89, set: 4, letter: objectiveTerms.bombShortA, smaller: true },
+          { floor: 0, left: 11, top: 164, set: 4, letter: objectiveTerms.bombShortB, smaller: true }
+        ],
+        secureObjectives: [
+          // 2F servers
+          { floor: 2, left: -23, top: 85, smaller: true },
+          // 1F cafeteria
+          { floor: 1, left: 224, top: -150, smaller: true },
+          // 1F control room
+          { floor: 1, left: -181, top: 84, smaller: true },
+          // B tank
+          { floor: 0, left: -211, top: 55, smaller: true }
+        ],
+        zoomPoints: {
+          topLeft: { top: -460, left: -390 },
+          bottomRight: { top: 330, left: 340 }
+        },
+        compassPoints: {
+          top: -310, left: -290
+        },
+        legendPoints: {
+          top: 210, left: 300
+        },
+        ladders: [
+          { floor: 0, left: 75, top: 150, otherFloor: 'up' },
+          { floor: 1, left: 75, top: 150, otherFloor: 'down' }
+        ],
+        cameras: [
+          {
+            floor: 2, left: 79, top: 5, id: 1, location: nighthavenTerms.connector,
+            los: [
+              [{left: 61, top: 14}, {left: 28, top: 14}, {left: 28, top: -96},{left: 90, top: -96}, {left: 90, top: -52}, {left: 135, top: -52}, {left: 135, top: 14}, {left: 100, top: 14}]
+            ]
+          },
+          {
+            floor: 2, left: -289, top: 167, id: 2, location: nighthavenTerms.warehouse,
+            los: [
+              [{left: -287, top: 148}, {left: -287, top: 120}, {left: -94, top: 120}, {left: -94, top: 144}, {left: 46, top: 128}, {left: 46, top: 146}, {left: -94, top: 161}, {left: -94, top: 221}, {left: -287, top: 221}, {left: -287, top: 192}]
+            ]
+          },
+          {
+            floor: 2, left: 113, top: -244, id: 3, location: nighthavenTerms.lobbyStairs,
+            los: [
+              [{left: 99, top: -290}, {left: 129, top: -290}, {left: 229, top: -290}, {left: 229, top: -219}, {left: 136, top: -219}, {left: 136, top: -69}, {left: 113, top: -69}, {left: 104, top: -219}, {left: 84, top: -219}, {left: 93, top: -257}, {left: 99, top: -290}]
+            ]
+          },
+          {
+            floor: 1, left: -260, top: -83, id: 4, location: nighthavenTerms.controlRoomHallway,
+            los: [
+              [{left: -218, top: -91}, {left: -218, top: -51}, {left: -165, top: -38}, {left: -165, top: -15}, {left: -218, top: -37}, {left: -218, top: -14}, {left: -237, top: -14}, {left: -237, top: 33}, {left: -206, top: 103}, {left: -211, top: 103}, {left: -237, top: 45}, {left: -237, top: 102}, {left: -244, top: 103}, {left: -224, top: 212}, {left: -257, top: 212}, {left: -264, top: 103}, {left: -272, top: 103}, {left: -272, top: -91}, {left: -218, top: -91}]
+            ]
+          },
+          {
+            floor: 1, left: 100, top: 7, id: 5, location: nighthavenTerms.vending,
+            los: [
+              [{left: 203, top: -3}, {left: 203, top: 83}, {left: 165, top: 55}, {left: 135, top: 55}, {left: 135, top: 103}, {left: 89, top: 103}, {left: 89, top: 33}, {left: 80, top: 33}, {left: 80, top: 53}, {left: 72, top: 53}, {left: 80, top: 21}, {left: 89, top: 21}, {left: 89, top: -3}, {left: 203, top: -3}]
+            ]
+          },
+          {
+            floor: 1, left: 65, top: -75, id: 6, location: nighthavenTerms.loungeHallway,
+            los: [
+              [{left: -108, top: -67}, {left: -108, top: -99}, {left: -103, top: -99}, {left: -103, top: -105}, {left: -109, top: -109}, {left: -109, top: -115}, {left: -76, top: -99}, {left: 45, top: -99}, {left: 45, top: -197}, {left: 69, top: -197}, {left: 75, top: -140}, {left: 79, top: -140}, {left: 79, top: -67}, {left: -108, top: -67}]
+            ]
+          },
+          {
+            floor: 0, left: -87, top: -39, id: 7, location: nighthavenTerms.cargoRoom,
+            los: [
+              [{left: -78, top: -93}, {left: -131, top: -93}, {left: -112, top: -71}, {left: -112, top: -56}, {left: -131, top: -64}, {left: -189, top: -63}, {left: -189, top: -4}, {left: -101, top: -4}, {left: -78, top: -18}, {left: -78, top: -93}]
+            ]
+          },
+          {
+            outdoor: true, left: 235, top: -439, id: 8, location: nighthavenTerms.mainEntrance,
+            los: [
+              [{left: 533, top: 64}, {left: 235, top: -439}, {left: -508, top: -414}]
+            ]
+          },
+          {
+            outdoor: true, left: 257, top: 298, id: 9, location: nighthavenTerms.storageContainers,
+            los: [
+              [{left: 519, top: -145}, {left: 257, top: 298}, {left: -168, top: 608}]
+            ]
+          },
+          {
+            outdoor: true, left: -405, top: -200, id: 10, location: nighthavenTerms.warehouseWestSide,
+            los: [
+              [{left: -508, top: 156}, {left: -405, top: -200}, {left: -317, top: -388}]
+            ]
+          }
+        ],
+        ceilingHatches: [
+          { floor: 1, left: 230, top: 15 },
+          { floor: 1, left: -43, top: -40 },
+          { floor: 0, left: -170, top: -50 },
+          { floor: 0, left: -154, top: 159 },
+          { floor: 0, left: 76, top: 71 }
+        ],
+        skylights: [
+        ],
+        droneTunnels: [
+          { floor: 0, left: -62, top: -78, rotate: 90, size: 30 },
+          { floor: 0, left: -53, top: -65, rotate: 0, size: 18 },
+          { floor: 1, left: -280, top: 18, rotate: 90, size: DRONE_SMALL },
+          { floor: 1, left: -60, top: 217, rotate: 0, size: DRONE_SMALL },
+          { floor: 1, left: 99, top: 112, rotate: 0, size: DRONE_SMALL },
+          { floor: 1, left: 306, top: -180, rotate: 90, size: DRONE_SMALL },
+          { floor: 1, left: -19, top: 58, rotate: 0, size: DRONE_SMALL },
+          { floor: 1, left: -183, top: -8, rotate: 0, size: DRONE_SMALL },
+          { floor: 1, left: -102, top: 109, rotate: 0, size: DRONE_SMALL },
+          { floor: 1, left: 38, top: -142, rotate: 90, size: DRONE_SMALL },
+          { floor: 1, left: 110, top: -199, rotate: 0, size: DRONE_SMALL },
+          { floor: 2, left: 146, top: 0, rotate: 90, size: DRONE_SMALL },
+          { floor: 2, left: 20, top: 3, rotate: 90, size: DRONE_SMALL },
+          { floor: 2, left: -165, top: 114, rotate: 0, size: DRONE_SMALL }
+        ],
+        spawnPoints: [
+          { letter: spawnTerms.a, left: -267, top: -461, description: nighthavenTerms.park },
+          { letter: spawnTerms.b, left: -538, top: 58, description: nighthavenTerms.generator },
+          { letter: spawnTerms.c, left: -115, top: 396, description: nighthavenTerms.helipad }
+        ],
+        roomLabels: [
+          // EXT
+          { outdoor: true, left: -52, top: 514, description: nighthavenTerms.helipad, hardToRead: true },
+          { outdoor: true, left: -311, top: 435, description: nighthavenTerms.workshop, hardToRead: true },
+          { outdoor: true, left: 179, top: 214, description: nighthavenTerms.storageContainers, hardToRead: true },
+          { outdoor: true, left: -323, top: 320, description: nighthavenTerms.workshopSide },
+          { outdoor: true, left: -381, top: 70, description: nighthavenTerms.warehouseWestSide, hardToRead: true },
+          { outdoor: true, left: -543, top: 0, description: nighthavenTerms.generator, hardToRead: true },
+          { outdoor: true, left: -227, top: -185, description: nighthavenTerms.northSide, hardToRead: true },
+          { outdoor: true, left: -143, top: -447, description: nighthavenTerms.park, hardToRead: true },
+          { outdoor: true, left: -25, top: -350, description: nighthavenTerms.lobbySide, hardToRead: true },
+          { outdoor: true, left: 96, top: -504, description: nighthavenTerms.mainEntrance },
+          { outdoor: true, left: 350, top: -74, description: nighthavenTerms.platformEastSide, hardToRead: true },
+
+          // Basement
+          { floor: 0, left: 156, top: 74, description: nighthavenTerms.vendingStairs, hardToRead: true, smaller: true },
+          { floor: 0, left: -133, top: -70, description: nighthavenTerms.cargoStairs, hardToRead: true, smaller: true },
+          { floor: 0, left: 125, top: 5, description: nighthavenTerms.exosuit, hardToRead: true },
+          { floor: 0, left: -42, top: 173, description: nighthavenTerms.assembly, hardToRead: true },
+          { floor: 0, left: -143, top: 78, description: nighthavenTerms.tank, hardToRead: true },
+          { floor: 0, left: -148, top: 195, description: nighthavenTerms.animus, hardToRead: true },
+          { floor: 0, left: -123, top: -20, description: nighthavenTerms.cargoRoom, hardToRead: true },
+          { floor: 0, left: -35, top: 49, description: nighthavenTerms.nanotech, hardToRead: true },
+          { floor: 0, left: -22, top: -30, description: nighthavenTerms.nanotechHallway, hardToRead: true },
+          { floor: 0, left: -140, top: 320, description: nighthavenTerms.emergencyExit },
+          { floor: 0, left: 40, top: 320, description: nighthavenTerms.emergencyExit },
+          { floor: 0, left: -180, top: 370, description: nighthavenTerms.workshopEntrance, hardToRead: true, smaller: true },
+          { floor: 0, left: -51, top: 265, description: nighthavenTerms.deliveryArea },
+          { floor: 0, left: -42, top: 360, description: nighthavenTerms.deliveryArea, hardToRead: true },
+
+          // 1F
+          { floor: 1, left: 185, top: 74, description: nighthavenTerms.vendingStairs, hardToRead: true, smaller: true },
+          { floor: 1, left: 130, top: -250, description: nighthavenTerms.lobbyStairs, hardToRead: true },
+          { floor: 1, left: -160, top: -75, description: nighthavenTerms.cargoStairs, hardToRead: true, smaller: true },
+          { floor: 1, left: -120, top: -110, description: nighthavenTerms.ccStairs, hardToRead: true, smaller: true },
+          { floor: 1, left: -23, top: 255, description: nighthavenTerms.warehouseDelivery, hardToRead: true },
+          { floor: 1, left: 130, top: 40, description: nighthavenTerms.vending, hardToRead: true },
+          { floor: 1, left: 232, top: 15, description: nighthavenTerms.pantry, veryHardToRead: true, smaller: true },
+          { floor: 1, left: 246, top: -80, description: nighthavenTerms.kitchen, hardToRead: true },
+          { floor: 1, left: 137, top: -90, description: nighthavenTerms.cafeteria, hardToRead: true },
+          { floor: 1, left: 56, top: -165, description: nighthavenTerms.cafeteriaHallway, hardToRead: true },
+          { floor: 1, left: 117, top: -306, description: nighthavenTerms.lobby, hardToRead: true },
+          { floor: 1, left: 10, top: 0, description: nighthavenTerms.lounge, hardToRead: true },
+          { floor: 1, left: -25, top: -70, description: nighthavenTerms.loungeHallway, hardToRead: true },
+          { floor: 1, left: -35, top: 160, description: nighthavenTerms.storage, hardToRead: true },
+          { floor: 1, left: 15, top: 100, description: nighthavenTerms.storageEntrance, hardToRead: true, smaller: true },
+          { floor: 1, left: -210, top: 170, description: nighthavenTerms.warehouse, hardToRead: true },
+          { floor: 1, left: -230, top: 250, description: nighthavenTerms.warehouseEntrance, hardToRead: true },
+          { floor: 1, left: -160, top: 50, description: nighthavenTerms.controlRoom, hardToRead: true },
+          { floor: 1, left: -260, top: 0, description: nighthavenTerms.controlRoomHallway, hardToRead: true },
+          { floor: 1, left: -140, top: -30, description: nighthavenTerms.cargo, hardToRead: true },
+
+          // 2F
+          { floor: 2, left: -170, top: -110, description: nighthavenTerms.ccStairs, hardToRead: true },
+          { floor: 2, left: 150, top: -250, description: nighthavenTerms.lobbyStairs, hardToRead: true },
+          { floor: 2, left: -160, top: 50, description: nighthavenTerms.commandCenter, hardToRead: true },
+          { floor: 2, left: -200, top: -30, description: nighthavenTerms.ccHallway, hardToRead: true },
+          { floor: 2, left: -30, top: 35, description: nighthavenTerms.servers, hardToRead: true },
+          { floor: 2, left: -20, top: 155, description: nighthavenTerms.it, hardToRead: true },
+          { floor: 2, left: -200, top: 180, description: nighthavenTerms.warehouse, hardToRead: true },
+          { floor: 2, left: 100, top: 70, description: nighthavenTerms.electrical, hardToRead: true },
+          { floor: 2, left: 75, top: -20, description: nighthavenTerms.connector, hardToRead: true },
+          { floor: 2, left: 190, top: -160, description: nighthavenTerms.meetingRoom, hardToRead: true },
+          { floor: 2, left: 115, top: -130, description: nighthavenTerms.meetingRoomHallway, hardToRead: true },
+          { floor: 2, left: 130, top: -310, description: nighthavenTerms.lobby, hardToRead: true },
+          { floor: 2, left: -270, top: 10, description: nighthavenTerms.ccBalcony, hardToRead: true },
+          { floor: 2, left: 190, top: 0, description: nighthavenTerms.electricalSide, hardToRead: true },
+          { floor: 2, left: 108, top: 145, description: nighthavenTerms.terrace, hardToRead: true },
+          { floor: 2, left: -13, top: 220, description: nighthavenTerms.warehouseBalcony, hardToRead: true },
+          { floor: 2, left: 275, top: -93, description: nighthavenTerms.meetingTerrace, hardToRead: true },
+          { floor: 2, left: 20, top: -170, description: nighthavenTerms.connectorTerrace, hardToRead: true },
+          { floor: 2, left: -110, top: -270, description: nighthavenTerms.observatory, hardToRead: true },
+
+          // Roof
+          { floor: 3, left: -5, top: -270, description: nighthavenTerms.connectorTerrace, hardToRead: true },
+          { floor: 3, left: -110, top: -270, description: nighthavenTerms.observatory, hardToRead: true },
+          { floor: 3, left: 60, top: -50, description: nighthavenTerms.roof, hardToRead: true }
         ]
       },
       oregon: {

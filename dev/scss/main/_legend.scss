@@ -28,12 +28,10 @@ $legend-item-smaller-height: $legend-item-height - $legend-item-smaller-height-d
 #legend {
   background-color: #000;
   border-radius: 10px 10px 0 0;
-  bottom: -725px;
   color: #fff;
   font-weight: 400;
   padding: $legend-padding;
   position: absolute;
-  right: -1255px;
   width: $legend-width + 5;
   z-index: $z-legend;
 

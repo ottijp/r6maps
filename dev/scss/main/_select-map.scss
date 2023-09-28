@@ -214,6 +214,13 @@ $map-thumb-height: 278px;
           @include map-name-selected();
         }
 
+        &.nighthaven div.image.thumb {
+          @include map-thumb-icon(22);
+        }
+        body[loaded-map="nighthaven"] &.nighthaven p {
+          @include map-name-selected();
+        }
+
         &.oregon div.image.thumb {
           @include map-thumb-icon(11);
         }

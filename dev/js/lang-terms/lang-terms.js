@@ -294,6 +294,7 @@ var R6MLangTerms = (function(undefined) {
         house: 'House',
         kanal: 'Kanal',
         kafe: 'Kafe Dostoyevsky',
+        nighthaven: 'Nighthaven Labs',
         oregon: 'Oregon',
         outback: 'Outback',
         plane: 'Plane',
@@ -1011,6 +1012,76 @@ var R6MLangTerms = (function(undefined) {
           smallBakery: 'Small<br/>Bakery',
           coatCheck: 'Coat<br/>Check',
           reception: 'Reception'
+        },
+        nighthaven: {
+          // EXT
+          park: 'Park',
+          generator: 'Generator',
+          helipad: 'Helipad',
+          workshop: 'Workshop',
+          storageContainers: 'Storage Containers',
+          workshopSide: 'Workshop Side',
+          warehouseWestSide: 'Warehouse<br/>West Side',
+          northSide: 'North Side',
+          lobbySide: 'Lobby Side',
+          mainEntrance: 'Main Entrance',
+          platformEastSide: 'Platform<br/>East Side',
+
+          // Stairs
+          vendingStairs: 'Vending<br/>Stairs',
+          cargoStairs: 'Cargo Stairs',
+          lobbyStairs: 'Lobby Stairs',
+          ccStairs: 'CC Stairs',
+
+          // Basement
+          exosuit: 'Exosuit',
+          assembly: 'Assembly',
+          tank: 'Tank',
+          animus: 'Animus',
+          cargoRoom: 'Cargo Room',
+          nanotech: 'Nanotech',
+          nanotechHallway: 'Nanotech Hallway',
+          emergencyExit: 'Emergency Exit',
+          workshopEntrance: 'Workshop<br/>Entrance',
+          deliveryArea: 'Delivery Area',
+
+          // 1F
+          warehouseDelivery: 'Warehouse Delivery',
+          vending: 'Vending',
+          pantry: 'Pantry',
+          kitchen: 'Kitchen',
+          cafeteria: 'Cafeteria',
+          cafeteriaHallway: 'Cafeteria<br/>Hallway',
+          lobby: 'Lobby',
+          lounge: 'Lounge',
+          loungeHallway: 'Lounge Hallway',
+          storage: 'Storage',
+          storageEntrance: 'Storage<br/>Entrance',
+          warehouse: 'Warehouse',
+          warehouseEntrance: 'Warehouse<br/>Entrance',
+          controlRoom: 'Control Room',
+          controlRoomHallway: 'Control Room<br/>Hallway',
+          cargo: 'Cargo',
+
+          // 2F
+          commandCenter: 'Command Center',
+          ccHallway: 'CC<br/>Hallway',
+          servers: 'Servers',
+          it: 'IT',
+          electrical: 'Electrical',
+          connector: 'Connector',
+          meetingRoom: 'Meeting Room',
+          meetingRoomHallway: 'Meeting Room<br/>Hallway',
+          ccBalcony: 'CC Balcony',
+          electricalSide: 'Electrical<br/>Side',
+          terrace: 'Terrace',
+          warehouseBalcony: 'Warehouse Balcony',
+          meetingTerrace: 'Meeting<br/>Terrace',
+          connectorTerrace: 'Connector Terrace',
+          observatory: 'Observatory',
+
+          // Roof
+          roof: 'Roof'
         },
         oregon: {
           // EXT
