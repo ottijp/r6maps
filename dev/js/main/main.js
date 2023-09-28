@@ -307,12 +307,12 @@
   };
 
   var sendControlAnalyticsEvent = function sendControlAnalyticsEvent(control, value) {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Controls',
-      eventAction: control,
-      eventLabel: value
-    });
+    // ga('send', {
+    //   hitType: 'event',
+    //   eventCategory: 'Controls',
+    //   eventAction: control,
+    //   eventLabel: value
+    // });
   };
 
   var sendFloorSelectAnalyticsEvent = function sendFloorSelectAnalyticsEvent() {
