@@ -370,12 +370,12 @@
   };
 
   var sendLoadStatsAnalyticsEvent = function sendLoadStatsAnalyticsEvent(queryString) {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Controls',
-      eventAction: 'LoadStats',
-      eventLabel: queryString
-    });
+    // ga('send', {
+    //   hitType: 'event',
+    //   eventCategory: 'Controls',
+    //   eventAction: 'LoadStats',
+    //   eventLabel: queryString
+    // });
   };
 
   var updateOpRoleChart = function updateOpRoleChart(skillKey, roleKey) {
